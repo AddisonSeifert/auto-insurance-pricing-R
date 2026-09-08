@@ -1,6 +1,4 @@
 # AUTO INSURANCE PRICING PROJECT
-# In RStudio: File > Open File > choose this file, then click Source.
-# It creates the practice data, summary table, and chart in your working directory.
 
 set.seed(2026)
 
@@ -58,6 +56,3 @@ barplot(by_age$claim_frequency, names.arg = by_age$group,
 abline(h = portfolio_frequency, lty = 2, lwd = 2)
 legend("topright", legend = "Portfolio average", lty = 2, bty = "n")
 dev.off()
-
-cat("\nDone! Look in your working directory for:\n")
-cat("- auto_policy_data.csv\n- pricing_summary.csv\n- claim_frequency.png\n")
